@@ -1,0 +1,65 @@
+.popup-card-container {
+  text-align: center;
+  margin: 20px;
+  z-index: 3;
+}
+
+.toggle-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  color: white;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 55;
+  border-radius: 32px;
+}
+
+.popup-content {
+  background-color: black;
+  padding: 60px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 550000;
+}
+
+.close-button:hover {
+  color: #ff6b6b;
+}
+.video {
+  /* padding: 20px; */
+}
+@media screen and (max-width: 1020px) {
+  .close-button {
+    cursor: pointer;
+    font-size: 57px;
+    position: absolute;
+    right: 23px;
+    top: 5px;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}

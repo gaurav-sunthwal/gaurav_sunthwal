@@ -1,0 +1,85 @@
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+  padding: 20px 0px;
+  background-color: #171717b3;
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px;
+}
+.logo {
+  text-align: center;
+   padding: 0px 20px;
+}
+
+.manu {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.manu :hover {
+  color: #7845458c;
+}
+
+.icons {
+  font-size: 25px;
+}
+.icons svg {
+  cursor: pointer;
+  padding: 0px;
+  color: white;
+  cursor: pointer;
+}
+.icons svg :hover {
+  color: #7845458c;
+}
+
+.manuBurger {
+  cursor: pointer;
+  padding: 12px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.manuBurger {
+  display: none;
+}
+.manuBurger svg {
+  font-size: 22px;
+}
+
+
+.bargurManu {
+  display: none;
+  text-align: center;
+  transition: display 0.3s ease;
+}
+
+
+.bargurManu h1 {
+  padding: 12px;
+  transition: all 0.25s;
+}
+
+@media screen and (max-width: 1025px) {
+  .logo {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .logo h1 {
+    font-size: 22px;
+  }
+  .manu {
+    display: none;
+  }
+  .manuBurger {
+    padding: 10px;
+    display: block;
+  }
+}

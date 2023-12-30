@@ -1,0 +1,24 @@
+footer{
+    width: 100%;
+    align-items: center;
+}
+
+.Item{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Item a{
+    padding: 12px;
+
+}
+
+.rightItam{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

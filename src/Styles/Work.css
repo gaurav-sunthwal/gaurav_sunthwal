@@ -1,0 +1,37 @@
+.work{
+    height: auto;
+    display: grid;
+    place-content: center;
+}
+
+
+.workCard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* padding: 12px; */
+    width: 30%;
+    margin: 10px;
+}
+.weorkSec{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.workCard img{
+    width: 100%;
+}
+.cardText{
+    padding: 10px 0px;
+}
+.cardInfo{
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 860px) {
+  .workCard{
+    width: 100%;
+  }
+ 
+}
