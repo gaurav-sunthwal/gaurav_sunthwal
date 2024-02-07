@@ -28,6 +28,17 @@
 }
 
 
+.freelansing{
+    margin: 12px;
+    display: flex;
+    overflow: auto;
+}
+
+.fiverr-seller-widget{
+    margin: 12px;
+}
+.fiverr-seller-widget .fiverr-seller-content {
+}
 
 @media screen and (max-width: 860px) {
   .workCard{

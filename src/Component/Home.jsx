@@ -118,6 +118,54 @@ function Home() {
                   <iframe
                     width="368"
                     height="655"
+                    src="https://www.youtube.com/embed/n_s8AL9s9hU"
+                    title="New mini vlog by Gaurav Sunthwal | mini vlog by GAURAV SUNTHWAL|  Brahmastra mini vlog"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                )
+              }
+            ></li>
+            <li
+              className="item"
+              onClick={() =>
+                openPopup(
+                  <iframe
+                    width="368"
+                    height="655"
+                    src="https://www.youtube.com/embed/n_s8AL9s9hU"
+                    title="New mini vlog by Gaurav Sunthwal | mini vlog by GAURAV SUNTHWAL|  Brahmastra mini vlog"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                )
+              }
+            ></li>
+            <li
+              className="item"
+              onClick={() =>
+                openPopup(
+                  <iframe
+                    width="368"
+                    height="655"
+                    src="https://www.youtube.com/embed/n_s8AL9s9hU"
+                    title="New mini vlog by Gaurav Sunthwal | mini vlog by GAURAV SUNTHWAL|  Brahmastra mini vlog"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                )
+              }
+            ></li>
+            <li
+              className="item"
+              onClick={() =>
+                openPopup(
+                  <iframe
+                    width="368"
+                    height="655"
                     src="https://www.youtube.com/embed/E8qJqLlQydE"
                     title="mini vlog #short #reel"
                     frameborder="0"
@@ -186,17 +234,16 @@ const MovingTextRightToLeft = (props) => {
 
     const updateTextPosition = () => {
       const scrollPosition = window.scrollY;
-      scrollingText.style.transform = `translateX(${-scrollPosition / 6}px)`;
+      scrollingText.style.transform = `translateX(${-scrollPosition / 15}px)`;
       requestAnimationFrame(updateTextPosition);
     };
 
     updateTextPosition();
 
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", updateTextPosition);
     };
-  }, []); // Empty dependency array ensures that the effect runs only once (on mount)
+  }, []); 
 
   return (
     <div className="moving-text" id="scrollingTextRightToLeft">
@@ -211,7 +258,7 @@ const MovingTextLeftToRight = (props) => {
 
     const updateTextPosition = () => {
       const scrollPosition = window.scrollY;
-      scrollingText.style.transform = `translateX(${scrollPosition / 6}px)`;
+      scrollingText.style.transform = `translateX(${scrollPosition / 15}px)`;
       requestAnimationFrame(updateTextPosition);
     };
 

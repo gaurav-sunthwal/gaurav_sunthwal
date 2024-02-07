@@ -35,7 +35,7 @@ function Navbar() {
                 <Link to={"/work"}>Work</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about">Blogs</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>

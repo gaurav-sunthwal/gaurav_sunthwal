@@ -99,25 +99,19 @@
 /* Css for that srolling text */
 
 .scrollingText{
-  margin-top: -10px;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  min-height: 120vh;
-  overflow: hidden;
-  font-size: 52px;
-  white-space: nowrap;
-  width: 100%;
+ text-align: center;
+ height: 100vh;
+ display: grid;
+ place-content: center;
+ font-size: 50px;
+ overflow-x: auto;
+ white-space: nowrap;
+}
+.scrollingText::-webkit-scrollbar {
+  height: 0;
 }
 
-.RightToLeft{
-  position: relative;
-  left: -200px;
-}
 
-.container{
-  margin-top: -10px;
-}
 .tital {
   padding: 10px;
   font-size: 25px;
@@ -136,7 +130,7 @@
   display: grid;
   place-items: center;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: auto;
   flex-wrap: wrap;
   /* padding: 22px; */
 }
@@ -146,7 +140,6 @@
   gap: 1.55rem;
   transform-style: preserve-3d;
   list-style-type: none;
-
   &:hover :not(:hover) {
     margin: 0 -20px;
     transform: perspective(500px) rotateY(45deg) scale(0.95);
@@ -166,7 +159,6 @@
   background-size: cover;
   background-position: center;
   transition: margin 0.5s, transform 0.5s;
-
   &:nth-of-type(1) {
     background-image: url(../Img/project1.webp);
   }
@@ -180,6 +172,15 @@
     background-image: url(../Img/project4.webp);
   }
   &:nth-of-type(5) {
+    background-image: url(../Img/project5.jpg);
+  }
+  &:nth-of-type(6) {
+    background-image: url(../Img/project5.jpg);
+  }
+  &:nth-of-type(7) {
+    background-image: url(../Img/project5.jpg);
+  }
+  &:nth-of-type(8) {
     background-image: url(../Img/project5.jpg);
   }
 
@@ -365,8 +366,7 @@
     font-size: 40px;
   }
   .scrollingText {
-    margin-top: 30%;
-    margin-bottom: 30%;
+    height: 50vh;
   }
   .RightToLeft {
     /* bottom: 130px; */
